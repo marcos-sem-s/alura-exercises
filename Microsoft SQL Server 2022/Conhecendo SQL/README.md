@@ -48,4 +48,27 @@ Qual a principal diferença entre esses dois componentes instalados por Mariana?
 
 <br>
 
+## Criando um banco
+Para criar um banco de dados no SQL Server, você pode usar o comando CREATE DATABASE ou o assistente do SSMS.
+
+Com o comando CREATE DATABASE:
+
+1. Abra o SSMS e conecte-se ao servidor.
+2. Clique na pasta "Bancos de Dados" e depois em "Nova Consulta".
+3. Digite o comando CREATE DATABASE nome_do_banco_de_dados;, por exemplo: CREATE DATABASE SUCOS_VENDAS;.
+4. Selecione o comando e clique em "Executar".
+5. Verifique se o banco de dados foi criado na pasta "Bancos de Dados" (talvez seja necessário atualizar a lista).
+
+Com o assistente do SSMS:
+
+1. Clique com o botão direito na pasta "Bancos de Dados" e selecione "Novo Banco de Dados...".
+2. Digite o nome do banco de dados no campo "Nome".
+3. Configure as opções de tamanho inicial, aumento automático e caminho do arquivo do banco de dados.
+4. Clique em "OK" para criar o banco de dados.
+5. Você pode ver o banco de dados criado na pasta "Bancos de Dados" no SSMS.
+
+Lembre-se que você pode usar o botão "Script" para ver o código SQL gerado pelo assistente.
+
+<br>
+
 ## 
