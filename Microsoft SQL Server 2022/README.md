@@ -1,0 +1,1 @@
+"Resuma esta aula em formato de exercicio"
