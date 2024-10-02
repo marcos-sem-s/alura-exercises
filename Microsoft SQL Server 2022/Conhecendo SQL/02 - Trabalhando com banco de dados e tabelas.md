@@ -46,7 +46,7 @@ Anna Júlia começou seus estudos em SQL Server e para isso criou duas bases de 
 
 - [ ] Os comandos: `CREATE DATABASE [Empresa1];` e `DELETE [Empresa1];` permitiram criar a base de dados chamada Empresa1 e excluí-la subsequentemente.
 - [ ] O comando `DROP [Empresa2]` pode ser executado logo após o `CREATE DATABASE [Empresa2];` se a intenção for deletar a base de dados Empresa2.
-- [ ] Executando `CREATE DATABASE [Empresa1];` e `CREATE DATABASE [Empresa2];` serão criadas duas bases de dados, a Empresa1 e a Empresa2.
+- [x] Executando `CREATE DATABASE [Empresa1];` e `CREATE DATABASE [Empresa2];` serão criadas duas bases de dados, a Empresa1 e a Empresa2.
 - [ ] Rodar o comando `NEW DATABASE [Empresa1];` constrói uma nova base de dados chamada Empresa1 pronta para se populada de tabelas.
 
 <br>
@@ -116,8 +116,17 @@ CREATE TABLE produtos (
 <br>
 
 ## Alterando tabelas
+Pensando mais a fundo nas tabelas da nossa empresa, a equipe responsável pela modelagem nos informou que o CPF também é uma chave primária, porém, da tabela de clientes.
 
+Como já criamos essa tabela de clientes em etapas anteriores, surge a questão: 
 
+``` sql
+ALTER TABLE clientes
+ALTER COLUMN cpf CHAR(11) NOT NULL;
+
+ALTER TABLE clientes
+ADD CONSTRAINT pk_clientes PRIMARY KEY CLUSTERED(cpf);
+```
 
 <br>
 
@@ -131,5 +140,9 @@ Nosso banco de dados precisa de mais uma tabela. Para realizar essa demanda, fom
 - Diante dessa demanda, qual comando podemos utilizar para a criação desta tabela?
 
 ``` sql
-
+CREATE TABLE vendedores(
+	matricula CHAR(5),
+	nome VARCHAR(100),
+	porcentagem_comissao FLOAT
+)
 ```
