@@ -140,7 +140,7 @@ Nosso banco de dados precisa de mais uma tabela. Para realizar essa demanda, fom
 - Diante dessa demanda, qual comando podemos utilizar para a criação desta tabela?
 
 ``` sql
-CREATE TABLE vendedores(
+CREATE TABLE vendedores (
 	matricula CHAR(5),
 	nome VARCHAR(100),
 	porcentagem_comissao FLOAT
