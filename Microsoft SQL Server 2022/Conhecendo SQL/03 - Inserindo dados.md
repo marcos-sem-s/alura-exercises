@@ -228,4 +228,10 @@ INSERT INTO [FILMES] VALUES
 
 <br>
 
-## 
+## Restrição de chave primária
+Para testar a restrição de chave primária, podemos usar o comando INSERT INTO para inserir dados em uma tabela.
+
+**Exercício**
+
+Tente inserir um valor nulo (NULL) na coluna que define a chave primária. O que acontece? Erro
+Tente inserir um valor duplicado na coluna que define a chave primária. O que acontece? Erro
